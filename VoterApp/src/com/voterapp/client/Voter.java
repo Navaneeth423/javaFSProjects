@@ -12,7 +12,7 @@ public class Voter {
 		System.out.println("Enter your age:");
 		int age = sc.nextInt();
 		
-		System.out.println("Enter you Voter ID: ");
+		System.out.println("Enter your Voter ID: ");
 		int voterId = sc.nextInt();
 		
 		sc.nextLine();
