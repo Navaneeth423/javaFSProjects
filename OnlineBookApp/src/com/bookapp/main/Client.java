@@ -2,6 +2,7 @@ package com.bookapp.main;
 
 import java.util.Scanner;
 
+import com.bookapp.model.Book;
 import com.bookapp.service.*;
 
 public class Client {
@@ -69,10 +70,10 @@ public class Client {
 			break;
 		case 6:
 			System.out.println("Enter ID of Book you are searching for: ");
-			sc.nextLine();
 			int bookId = sc.nextInt();
 			try {
-				bookService.getById(bookId);
+				Book book = bookService.getById(bookId);
+				System.out.println(book);
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
